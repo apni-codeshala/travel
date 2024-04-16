@@ -77,6 +77,7 @@ const Home = () => {
       {loading ? <Loader /> : <Fragment>
 
         {/*slider */}
+        <h1>hello bantai</h1>
         <div id="carouselExampleAutoplaying" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-wrap="true" data-bs-pause="false">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
