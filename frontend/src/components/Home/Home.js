@@ -33,17 +33,16 @@ import image22 from '../../assets/m5.jpg'
 import image23 from '../../assets/m6.jpg'
 import image24 from '../../assets/bonfire.jpg'
 import image25 from '../../assets/rotatedjeep.jpg'
-
-
+import imageIndia from '../../assets/2422197-removebg-preview.png'
+import heroImage from '../../assets/4056364.jpg'
 import { Link } from 'react-router-dom';
 import Lottie from "lottie-react"
-import walkingman from '../../assets/walkingman.json'
 import walkingcar from '../../assets/walkingcar.json'
 import packageanimation from '../../assets/packageanimations.json'
 import featuredpackagesanimation from '../../assets/h1.json'
 import featuredpackageanimation2 from '../../assets/h4.json'
 import testimonialsanimation from '../../assets/R2.json'
-
+import travelImage from '../../assets/3675155.jpg'
 
 const Home = () => {
   const alert = useAlert();
@@ -76,200 +75,119 @@ const Home = () => {
     <Fragment>
       {loading ? <Loader /> : <Fragment>
 
-        {/*slider */}
-        <h1>hello bantai</h1>
-        <div id="carouselExampleAutoplaying" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-wrap="true" data-bs-pause="false">
-          <div className="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          </div>
-          <div className="carousel-inner">
+        {/* hero section */}
+        <div className="hero-section">
+          <div className="left-hero">
+            <h2>
+              Explore<span> India's</span> Hidden Gems and Iconic Landmarks with Our Revolutionary Travel Companion.
+            </h2>
+            <div className="left-hero-buttons">
+              <button className='left-explore'>
+                Get Exploration
+              </button>
+              <button className='left-read'>
+                Read More
+              </button>
 
-            <div className="carousel-item active">
-              <div className="image-overlay"></div>
-              <img src={image1} className="d-block w-100" alt="Mountain-area" />
-              <div className="carousel-caption" >
-                <h5 className='caption-heading white-clr'>Book Your Favourite<br /> Destination With Us!</h5>
-              </div>
-            </div>
-
-            <div className="carousel-item">
-              <div className="image-overlay"></div>
-              <img src={image2} class="d-block w-100" alt="Travel-packages" />
-              <div className="carousel-caption">
-                <h5 className='caption-heading white-clr' >Explore <br /> Exciting Tourism Packages!</h5>
-              </div>
-            </div>
-
-            <div className="carousel-item">
-              <div className="image-overlay"></div>
-              <img src={image3} className="d-block w-100" alt="vehicles" />
-              <div className="carousel-caption">
-                <h5 className='caption-heading white-clr'>Seamless Travel with our Vehicle Packages!</h5>
-              </div>
-            </div>
-
-            <div className="carousel-item">
-              <div className="image-overlay"></div>
-              <img src={image4} className="d-block w-100" alt="Payments" />
-              <div className="carousel-caption">
-                <h5 className='caption-heading white-clr'>Effortless Payments <br />for Hassle-free Bookings!</h5>
-              </div>
-            </div>
-
-            <div className="carousel-item">
-              <div className="image-overlay"></div>
-              <img src={image5} className="d-block w-100" alt="Reviews" />
-              <div className="carousel-caption">
-                <h5 className='caption-heading white-clr' >Real Reviews, Real Experiences!</h5>
-              </div>
-            </div>
-
-            <div className="carousel-item">
-              <div className="image-overlay"></div>
-              <img src={image6} className="d-block w-100" alt="vehicles" />
-              <div className="carousel-caption">
-                <h5 className='caption-heading white-clr'>Connect with Us! <br /> 24/7 Support at Your Fingertips.</h5>
-              </div>
             </div>
           </div>
-
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
+          <div className="right-hero">
+            <img src={heroImage} alt="image" />
+          </div>
         </div>
-
-
 
         {/*Collage section */}
         <div className="max-width collage-section">
-          <div className="row">
-            <div className="col-md-6 col-sm-12 py-5">
-              <h5 className='collage-heading'><b>Making Travel Easy</b></h5>
-              <br />
-              <br />
-              <h2 className='collage-sub-heading'><b>Discover Beautiful Places<br />with us!</b></h2>
-              <p className='collage-para'>Thinking of taking a break from everyday's life?
-                <br />Don't worry! we take care of your trip.</p>
+          <div className="collage-top">
+            <h5 className='collage-heading'><b>Feature Tours</b></h5>
 
-              <div style={containerStyle}>
+            <h2 className='collage-sub-heading'><b>Explore Beautiful Places around India with us!</b></h2>
+            <p className='collage-para'>Thinking of taking a break from everyday's life?
+              <br />Don't worry! we take care of your trip.</p>
+
+            {/* <div style={containerStyle}>
                 <Lottie loop={true} animationData={walkingman} />
-              </div>
-            </div>
-
-            <div className="col-md-6 col-sm-12 py-5">
-
-              <div className="row">
-                <div className="col">
-                  <img className="collage-img1" src={image18} alt='scenary1' width="100%" />
-                </div>
-                <div className="col">
-                  <img className="collage-img2" src={image19} alt='scenary2' width="100%" />
-                </div>
-                <div className="col">
-                  <img className="collage-img" src={image20} alt='scenary3' width="100%" />
-                </div>
-              </div>
-
-              <div className="row">
-                <div className="col">
-                  <img className="collage-img" src={image21} alt='scenary4' width="100%" />
-                </div>
-                <div className="col">
-                  <img className="collage-img5" src={image22} alt='scenary5' width="100%" />
-                </div>
-
-                <div className="col">
-                  <img className="collage-img" src={image23} alt='scenary6' width="100%" />
-                </div>
-              </div>
-            </div>
+              </div> */}
 
           </div>
+
+          <div className="collage-bottom">
+
+            <div className="col">
+              <img className="collage-img1" src={image18} alt='scenary1' width="100%" />
+            </div>
+            <div className="col">
+              <img className="collage-img2" src={image19} alt='scenary2' width="100%" />
+            </div>
+            <div className="col">
+              <img className="collage-img" src={image20} alt='scenary3' width="100%" />
+            </div>
+
+            <div className="col">
+              <img className="collage-img" src={image21} alt='scenary4' width="100%" />
+            </div>
+            <div className="col">
+              <img className="collage-img5" src={image22} alt='scenary5' width="100%" />
+            </div>
+
+            <div className="col">
+              <img className="collage-img" src={image23} alt='scenary6' width="100%" />
+            </div>
+          </div>
         </div>
+
+      
 
 
 
         {/*Tourism-packages-info */}
 
         <div className="max-width about-tourpackage-section">
-          <div className="row">
-            <div className="col-md-6 col-sm-12 py-5">
-              <h2 className='section-heading'><b>Looking for Exciting Tourism Packages?</b></h2>
-              <p className='section-para'>
-                Embark on a journey of discovery with our exclusive tourism packages. Immerse yourself in the rich culture, breathtaking landscapes, and unique experiences that awaits you.
-              </p>
-
-              <p className='section-para'>
-                Whether you're seeking adventure, relaxation, or cultural enrichment, our curated packages cater to diverse interests. Discover hidden gems, savor local cuisines, and create memories that lasts a lifetime.
-              </p>
-              <Link to="/products">
-                <button className='learn-more-btn'>Book Your Desired Package!</button>
-              </Link>
-              <Lottie className='package-animation' loop={true} animationData={packageanimation} />
-            </div>
-
-            <div className="col-md-6 col-sm-12 py-5">
-              <div className="image-container">
-                <img className='section-img' src={image7} alt='TravelSide' width="100%" />
-                <img className='bonfire-img' src={image24} alt='bonfire' width="100%" />
-              </div>
-            </div>
+          <div className="tour-image">
+            <img src={imageIndia} alt="image" />
           </div>
+          <div className="tour-info col-md-6 col-sm-12 py-5">
+            <h2 className='section-heading'><b>Looking for <span>Exciting</span> Tourism Packages?</b></h2>
+            <p className='section-para'>
+              Embark on a journey of discovery with our exclusive tourism packages. Immerse yourself in the rich culture, breathtaking landscapes, and unique experiences that awaits you.
+            </p>
+
+            <p className='section-para'>
+              Whether you're seeking adventure, relaxation, or cultural enrichment, our curated packages cater to diverse interests. Discover hidden gems, savor local cuisines, and create memories that lasts a lifetime.
+            </p>
+            <Link to="/products">
+              <button className='learn-more-btn'>Book Your Desired Package!</button>
+            </Link>
+            <Lottie className='package-animation' loop={true} animationData={packageanimation} />
+          </div>
+
+
         </div>
 
-
-
-        {/*Featured-packages cards */}
-
-        <div class="d-flex featured-Heading1-section">
-          <div class="p-2"><Lottie className="featured-Heading1-animation" loop={true} animationData={featuredpackagesanimation} /></div>
-          <div class="p-2"><h2 className="featured-Heading1"><b>Featured Packages:</b></h2></div>
-        </div>
-
-        <div className='container' id='container'>
-          {products && products.map((product) => (
-            <ProductCard key={product._id} product={product} />
-          ))}
-        </div>
 
 
 
 
         {/*vehicle-packages-info */}
-        <div className="max-width about-vehiclepackage-section">
-          <div className="row">
-            <div className="col-md-6 col-sm-12 py-5">
-              <div className="image-container">
-                <img className='section-img' src={image8} alt='TravelSide' width="100%" />
-                <img className='rotated-jeep' src={image25} alt='rotated-jeep' width="100%" />
-              </div>
-            </div>
+        <div className="max-width travel about-vehiclepackage-section">
+          <div className="travel-img">
+            <img src={travelImage} alt="car" />
+          </div>
 
-            <div className="col-md-6 col-sm-12 py-5">
-              <h2 className='vehicle-section-heading'><b>Explore the Freedom of <br />Rented Vehicles</b></h2>
-              <br /><p className='vehicle-section-para'>
-                Discover the convenience and flexibility of our rented vehicle packages. Whether you're planning a road trip, a weekend getaway, or need a reliable vehicle for your daily commute, we have the perfect solution for you.
-              </p>
+          <div className="travel-content col-md-6 col-sm-12 py-5">
+            <h2 className='vehicle-section-heading'><b>Explore the Freedom of <br /><span>Rented Vehicles</span></b></h2>
+            <br /><p className='vehicle-section-para'>
+              Discover the convenience and flexibility of our rented vehicle packages. Whether you're planning a road trip, a weekend getaway, or need a reliable vehicle for your daily commute, we have the perfect solution for you.
+            </p>
 
-              <p className='vehicle-section-para'>
-                Our fleet includes a variety of vehicles, from compact cars to spacious SUVs, ensuring that you find the ideal match for your transportation needs. Enjoy the comfort, safety, and freedom to explore at your own pace.
-              </p>
-              <Link to="/vehicles">
-                <button className='booking-btn'>Book Your Vehicle</button>
-              </Link>
-              <Lottie className='car-animation' loop={true} animationData={walkingcar} />
+            <p className='vehicle-section-para'>
+              Our fleet includes a variety of vehicles, from compact cars to spacious SUVs, ensuring that you find the ideal match for your transportation needs. Enjoy the comfort, safety, and freedom to explore at your own pace.
+            </p>
+            <Link to="/vehicles">
+              <button className='booking-btn'>Book Your Vehicle</button>
+            </Link>
+            <Lottie className='car-animation' loop={true} animationData={walkingcar} />
 
-            </div>
           </div>
         </div>
 
@@ -277,8 +195,8 @@ const Home = () => {
 
         {/*Featured vehicles*/}
         <div class="d-flex featured-Heading2-section">
-          <div class="p-2"><Lottie className="featured-Heading2-animation" loop={true} animationData={featuredpackageanimation2}/></div>
-          <div class="p-2"><h2 className="featured-Heading2"><b>Featured Vehicles:</b></h2></div>
+          <div class="p-2"><Lottie className="featured-Heading2-animation" loop={true} animationData={featuredpackageanimation2} /></div>
+          {/* <div class="p-2"><h2 className="featured-Heading2"><b>Featured Vehicles:</b></h2></div> */}
         </div>
 
         <div className='container' id='container'>
@@ -291,9 +209,8 @@ const Home = () => {
         {/*Testimonials*/}
         <div class="d-flex testimonials-section">
           <div class="p-2"><Lottie className="testimonials-animation" loop={true} animationData={testimonialsanimation} /></div>
-          <div class="p-2"><h2 className='testimonials-headiing'><b>Testimonials</b></h2></div>
         </div>
-        
+
         <div id="carouselMultiItemExample" className="carousel slide carousel-dark text-center testimonialssection" data-mdb-ride="carousel" data-bs-interval="3000" data-bs-wrap="true" data-bs-pause="false">
 
           <div className="d-flex justify-content-center mb-4">

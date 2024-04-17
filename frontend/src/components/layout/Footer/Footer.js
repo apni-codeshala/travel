@@ -11,8 +11,8 @@ import AttachmentIcon from '@mui/icons-material/Attachment';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import PinterestIcon from '@mui/icons-material/Pinterest';
-import {Link} from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
+import logo from '../../../assets/logo-white-removebg-preview.png'
 const Footer = () => {
   return (
     <footer id="footer">
@@ -23,14 +23,13 @@ const Footer = () => {
         <div className="row text-white">
 
           <div className="col text-center text-white">
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <img className="" src={image1} alt='logo-img' width="40%" style={{ transform: 'rotate(-15deg)', marginLeft: '10px' }} />
-              <h2 className="LogoTitle" ><b>Travelogue</b></h2>
+            <div className="footer-logo" style={{ display: 'flex', alignItems: 'center' }}>
+              <img className="" src={logo} alt='logo-img' width="40%" style={{ transform: 'rotate(-15deg)', marginLeft: '10px' }} />
             </div>
             <p className="slogan">"Unveiling Adventures, Connecting Journeys!"</p>
             <div className="flexbox">
-              <div className="p-2"><img src={image3} alt="google-play-store" width="100%"/></div>
-              <div className="p-2"><img src={image4} alt="app-play-store" width="100%"/></div>
+              <div className="p-2"><img src={image3} alt="google-play-store" width="100%" /></div>
+              <div className="p-2"><img src={image4} alt="app-play-store" width="100%" /></div>
             </div>
 
           </div>
@@ -42,8 +41,8 @@ const Footer = () => {
               <div className="p-2"><b>SERVICES :</b></div>
             </div>
 
-            <br/><Link className="hovers" to="/products">
-            Tourism Packages</Link>
+            <br /><Link className="hovers" to="/products">
+              Tourism Packages</Link>
 
             <br /><br /><Link className="hovers" to="/vehicles">Vehicles</Link>
             <br /><br />Careers
@@ -55,37 +54,37 @@ const Footer = () => {
               <div className="p-2 circular"><InstagramIcon /></div>
               <div className="p-2"><a className="social-links" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><b>INSTAGRAM :</b></a></div>
             </div>
-            <br/>
+            <br />
             <a className="social-links" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <img className="insta-collag-img" src={image2} alt="collage" width="55%" /></a>
+              <img className="insta-collag-img" src={image2} alt="collage" width="55%" /></a>
           </div>
 
           <div class="col text-white">
-    <div className="flexbox">
-        <div className="p-2 circular"> <AttachmentIcon /></div>
-        <div className="p-2"><b>FOLLOW US :</b></div>
-    </div>
-    <br/>
-    <div className="flexbox">
-        <div className="p-2"> <a className="social-links" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><InstagramIcon /></a></div>
-        <div className="p-2" ><a className="social-links" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></div>
-    </div>
-    <div className="flexbox">
-        <div className="p-2"> <a className="social-links" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a></div>
-        <div className="p-2"><a className="social-links" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></div>
-    </div>
-    <div className="flexbox">
-        <div className="p-2"> <a className="social-links" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><TwitterIcon /></a></div>
-        <div className="p-2"><a className="social-links" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></div>
-    </div>
-    <div className="flexbox">
-        <div className="p-2"> <a className="social-links" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer"><PinterestIcon /></a></div>
-        <div className="p-2"><a className="social-links" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></div>
-    </div>
-</div>
+            <div className="flexbox">
+              <div className="p-2 circular"> <AttachmentIcon /></div>
+              <div className="p-2"><b>FOLLOW US :</b></div>
+            </div>
+            <br />
+            <div className="flexbox">
+              <div className="p-2"> <a className="social-links" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><InstagramIcon /></a></div>
+              <div className="p-2" ><a className="social-links" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+            </div>
+            <div className="flexbox">
+              <div className="p-2"> <a className="social-links" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a></div>
+              <div className="p-2"><a className="social-links" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></div>
+            </div>
+            <div className="flexbox">
+              <div className="p-2"> <a className="social-links" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><TwitterIcon /></a></div>
+              <div className="p-2"><a className="social-links" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></div>
+            </div>
+            <div className="flexbox">
+              <div className="p-2"> <a className="social-links" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer"><PinterestIcon /></a></div>
+              <div className="p-2"><a className="social-links" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></div>
+            </div>
+          </div>
 
         </div>
-        <br/>
+        <br />
       </div>
     </footer >
   );
