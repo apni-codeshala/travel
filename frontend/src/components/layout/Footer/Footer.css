@@ -4,13 +4,17 @@
   flex-direction: row;
 }
 .footer-grid{
-  background: linear-gradient(to left, #2a6579, #4445a8, #032241);
+  background: linear-gradient(to left, #2d450f, #335A02, #559901);
   background-size: 200% 100%;
-  animation: gradientAnimation 5s linear infinite;
+  /* animation: gradientAnimation 5s ease-in-out infinite; */
   font-family: 'Quicksand', sans-serif;
 }
 .text-white{
   color: white;
+}
+.footer-logo img{
+  display: flex;
+  justify-content: center;
 }
 .circular{
   border: 1px solid;

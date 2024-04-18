@@ -1,25 +1,30 @@
 .logo-image{
   margin-right: 0;
+  height: fit-content;
+
 }
 .text-white{
   font-family: 'Quicksand', sans-serif;
+
 }
 .nav-link:hover {
-  color: #92cbdf;
+  color: #335A02;
+  text-decoration: underline;
+  margin-bottom: 2px;
 }
 
 
 .animated-logo {
-  animation: logoanimation 2.5s ease-in-out infinite;;
+  animation: logoanimation 2.5s ease-in-out forwards;
 }
 @keyframes logoanimation {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
   }
 }
 
